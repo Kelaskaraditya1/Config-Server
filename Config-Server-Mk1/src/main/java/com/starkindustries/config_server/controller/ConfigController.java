@@ -46,7 +46,7 @@ public class ConfigController {
         response.put(Keys.STATUS, HttpStatus.OK.value());
         response.put(Keys.MESSAGE,"Configurations fetched successfully!!");
 //        log.info("configuration:{}",configuration);
-        response.put(Keys.BODY,configuration);
+        response.put(Keys.BODY,buildConfiguration);
 
         return ResponseEntity.status(HttpStatus.OK).body(response);
 
